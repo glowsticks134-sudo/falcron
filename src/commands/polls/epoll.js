@@ -11,6 +11,7 @@ import {
         SeparatorBuilder,
         SeparatorSpacingSize,
         ApplicationCommandOptionType,
+        PermissionFlagsBits,
 } from 'discord.js';
 import { disableComponents, logger } from '#utils';
 
@@ -25,10 +26,13 @@ class EndPollCommand extends Command {
                         cooldown: 5,
                         minArgs: 1,
                         examples: ['epoll 1150000000000000000'],
+                        userPermissions: [PermissionFlagsBits.ManageGuild],
+                        permissions: [PermissionFlagsBits.ManageGuild],
                         enabledSlash: true,
                         slashData: {
                                 name: 'epoll',
                                 description: 'Ends an active poll',
+                                defaultMemberPermissions: PermissionFlagsBits.ManageGuild,
                                 options: [
                                         {
                                                 name: 'message_id',
