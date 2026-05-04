@@ -8,6 +8,7 @@ import {
         SeparatorBuilder,
         SeparatorSpacingSize,
         ApplicationCommandOptionType,
+        PermissionFlagsBits,
 } from 'discord.js';
 import { db } from '#dbManager';
 
@@ -36,11 +37,13 @@ class BlacklistChannelCommand extends Command {
                         usage: 'blacklistchannel [#channel | channelID]',
                         aliases: ['blchannel'],
                         cooldown: 5,
-                        userPermissions: ['Administrator'],
+                        userPermissions: [PermissionFlagsBits.Administrator],
+                        permissions: [PermissionFlagsBits.Administrator],
                         enabledSlash: true,
                         slashData: {
                                 name: 'blacklistchannel',
                                 description: 'Blacklist a channel from message counting',
+                                defaultMemberPermissions: PermissionFlagsBits.Administrator,
                                 options: [
                                         {
                                                 type: ApplicationCommandOptionType.Channel,
