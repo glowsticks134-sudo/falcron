@@ -1,7 +1,7 @@
 // Falcron | AeroX Development
 // Author: itsfizys
 import { Command } from '#command';
-import { MessageFlags, ApplicationCommandOptionType } from 'discord.js';
+import { MessageFlags, ApplicationCommandOptionType, PermissionFlagsBits } from 'discord.js';
 import { timerStore, buildStartComponents, buildEndComponents, formatTime } from '#timerUtils';
 
 const parseTime = (str) => {
@@ -22,10 +22,13 @@ class TStartCommand extends Command {
                         cooldown: 5,
                         minArgs: 1,
                         examples: ['tstart 1m Music event'],
+                        userPermissions: [PermissionFlagsBits.ManageGuild],
+                        permissions: [PermissionFlagsBits.ManageGuild],
                         enabledSlash: true,
                         slashData: {
                                 name: 'tstart',
                                 description: 'Starts the timer',
+                                defaultMemberPermissions: PermissionFlagsBits.ManageGuild,
                                 options: [
                                         {
                                                 type: ApplicationCommandOptionType.String,
