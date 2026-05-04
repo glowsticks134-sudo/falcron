@@ -7,6 +7,7 @@ import {
         TextDisplayBuilder,
         SeparatorBuilder,
         SeparatorSpacingSize,
+        PermissionFlagsBits,
 } from 'discord.js';
 import { db } from '#dbManager';
 
@@ -17,10 +18,12 @@ class BlacklistedChannelsCommand extends Command {
                         description: 'Lists all channels blacklisted from message counting',
                         aliases: ['blchannels'],
                         cooldown: 5,
+                        userPermissions: [PermissionFlagsBits.ManageGuild],
                         enabledSlash: true,
                         slashData: {
                                 name: 'blacklistedchannels',
                                 description: 'Lists all channels blacklisted from message counting',
+                                defaultMemberPermissions: PermissionFlagsBits.ManageGuild,
                         },
                 });
         }
