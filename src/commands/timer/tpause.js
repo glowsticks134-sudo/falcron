@@ -1,7 +1,7 @@
 // Falcron | AeroX Development
 // Author: itsfizys
 import { Command } from '#command';
-import { MessageFlags } from 'discord.js';
+import { MessageFlags, PermissionFlagsBits } from 'discord.js';
 import { emoji } from '#emoji';
 import { timerStore, buildPausedComponents, formatTime } from '#timerUtils';
 
@@ -14,10 +14,13 @@ class TPauseCommand extends Command {
                         cooldown: 5,
                         minArgs: 1,
                         examples: ['tpause 1150000000000000000'],
+                        userPermissions: [PermissionFlagsBits.ManageGuild],
+                        permissions: [PermissionFlagsBits.ManageGuild],
                         enabledSlash: true,
                         slashData: {
                                 name: 'tpause',
                                 description: 'Pauses an active timer',
+                                defaultMemberPermissions: PermissionFlagsBits.ManageGuild,
                                 options: [
                                         {
                                                 type: 3,
