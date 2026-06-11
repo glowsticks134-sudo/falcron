@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 import { REST } from '@discordjs/rest';
 import { Client, GatewayIntentBits, Options, Partials } from 'discord.js';
 import { createRequire } from 'module';
@@ -178,11 +178,11 @@ export class Bot extends Client {
 }
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 export const config = {
         token: process.env.DISCORD_TOKEN || '',
         clientId: process.env.DISCORD_CLIENT_ID || '',
@@ -25,7 +25,7 @@ export const config = {
         presence: {
                 status: 'idle',
                 activity: {
-                        name: '-help || AeroX Development',
+                        name: '-help || Member Depot',
                         type: 'Custom',
                 },
         },
@@ -35,11 +35,11 @@ export const config = {
 };
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 import { readFileSync } from 'fs';
 import { createHash } from 'crypto';
 import { fileURLToPath } from 'url';
@@ -50,8 +50,8 @@ const _fail = (silent) => {
             '  ║  One or more protected files have been modified.        ║\n' +
             '  ║  Restore original credits to run the bot.               ║\n' +
             '  ╠══════════════════════════════════════════════════════════╣\n' +
-            '  ║  Developer : itsfizys  |  AeroX Development             ║\n' +
-            '  ║  Support   : https://discord.gg/AeroX                   ║\n' +
+            '  ║  Developer : Stichachu13  |  Member Depot             ║\n' +
+            '  ║  Support   : https://discord.gg/Member Depot                   ║\n' +
             '  ╚══════════════════════════════════════════════════════════╝\n' +
             '\x1b[0m\n'
         );
@@ -97,11 +97,11 @@ export function _startWatch(client) {
 }
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

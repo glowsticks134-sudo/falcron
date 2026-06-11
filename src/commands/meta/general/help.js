@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 import { Command } from '#command';
 import {
         MessageFlags,
@@ -129,7 +129,7 @@ const CATEGORY_DATA = {
                 title: 'Utility',
                 description: 'More info on Utility commands of the bot',
                 commands: [
-                        ['premium',     'Shows information about Falcron Premium'],
+                        ['premium',     'Shows information about Member Depot Utility Premium'],
                         ['nuke',        'Nukes a TextChannel'],
                         ['serverinfo',  'Displays the information about a server'],
                         ['userinfo',    'Displays the information of a member'],
@@ -261,7 +261,7 @@ class HelpCommand extends Command {
                                 .setStyle(ButtonStyle.Link),
                         new ButtonBuilder()
                                 .setLabel('Support')
-                                .setURL(config.links?.supportServer || 'https://discord.gg/AeroX')
+                                .setURL(config.links?.supportServer || 'https://discord.gg/Member Depot')
                                 .setStyle(ButtonStyle.Link),
                 );
         }
@@ -271,7 +271,7 @@ class HelpCommand extends Command {
                 container.setAccentColor(ACCENT);
 
                 container.addTextDisplayComponents(
-                        new TextDisplayBuilder().setContent('### Falcron bot help panel'),
+                        new TextDisplayBuilder().setContent('### Member Depot Utility bot help panel'),
                 );
 
                 container.addSeparatorComponents(
@@ -285,9 +285,9 @@ class HelpCommand extends Command {
 ` +
                                 `${emoji.news} **News** ${emoji.news}
 ` +
-                                `${emoji.arrow} AeroX Development reached 4K Members!
+                                `${emoji.arrow} Member Depot reached 4K Members!
 ` +
-                                `${emoji.arrow} Join AeroX and upgrade your experience.
+                                `${emoji.arrow} Join Member Depot and upgrade your experience.
 
 ` +
                                 `I can do invite tracking, can manage your server events with greet system, timer, polls and much more! You can checkout my other commands in the context menu!
@@ -373,11 +373,11 @@ ${data.note}`;
 export default new HelpCommand();
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

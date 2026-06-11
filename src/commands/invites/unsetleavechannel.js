@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 import { Command } from '#command';
 import {
         MessageFlags,
@@ -41,7 +41,7 @@ class UnsetLeaveChannelCommand extends Command {
                 const container = new ContainerBuilder().setAccentColor(0xffffff);
 
                 container.addTextDisplayComponents(
-                        new TextDisplayBuilder().setContent('### Falcron invite logger'),
+                        new TextDisplayBuilder().setContent('### Member Depot Utility invite logger'),
                 );
 
                 container.addSeparatorComponents(
@@ -70,11 +70,11 @@ class UnsetLeaveChannelCommand extends Command {
 export default new UnsetLeaveChannelCommand();
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

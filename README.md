@@ -1,6 +1,6 @@
 <div align="center">
 
-  # Falcron
+  # Member Depot Utility
 
   A feature-rich, modular Discord bot built with Discord.js.
   Designed for invite tracking, community management, and server automation.
@@ -13,7 +13,7 @@
 
   ## Overview
 
-  Falcron is a powerful, modular Discord bot engineered for performance and extensibility. It supports both **prefix commands** and **slash commands**, backed by a persistent **MongoDB** database. Every feature is purpose-built with clean separation between commands, events, and data layers.
+  Member Depot Utility is a powerful, modular Discord bot engineered for performance and extensibility. It supports both **prefix commands** and **slash commands**, backed by a persistent **MongoDB** database. Every feature is purpose-built with clean separation between commands, events, and data layers.
 
   ---
 
@@ -98,8 +98,8 @@
 
   ```bash
   # 1. Clone the repository
-  git clone https://github.com/AeroXDevs/Falcron.git
-  cd Falcron
+  git clone https://github.com/Member-Depot/Member Depot Utility.git
+  cd Member Depot Utility
 
   # 2. Install dependencies
   npm install
@@ -141,15 +141,15 @@
 
   ## Credits
 
-  **Developer** — [itsfizys](https://github.com/itsfizys)
-  **Organisation** — [AeroX Development](https://github.com/AeroXDevs)
+  **Developer** — [Stichachu13](https://github.com/Stichachu13)
+  **Organisation** — [Member Depot](https://github.com/Member-Depot)
   **Handler** — Built using the [bre4d777/handler](https://github.com/bre4d777/handler) framework by [bre4d777](https://github.com/bre4d777)
 
   ---
 
   ## Support
 
-  Join the AeroX Development Discord server for help, updates, and community support.
+  Join the Member Depot Discord server for help, updates, and community support.
 
   **[discord.gg/aerox](https://discord.gg/aerox)**
 
@@ -157,7 +157,7 @@
 
   <div align="center">
 
-  © 2026 AeroX Development. All rights reserved.
+  © 2026 Member Depot. All rights reserved.
   See [LICENSE](./LICENSE) for usage terms.
 
   </div>

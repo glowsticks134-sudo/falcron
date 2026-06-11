@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 import { Command } from '#command';
 import {
         MessageFlags,
@@ -16,13 +16,13 @@ class PremiumCommand extends Command {
         constructor() {
                 super({
                         name: 'premium',
-                        description: 'Shows information about Falcron Premium',
+                        description: 'Shows information about Member Depot Utility Premium',
                         usage: 'premium',
                         cooldown: 10,
                         enabledSlash: true,
                         slashData: {
                                 name: 'premium',
-                                description: 'Shows information about Falcron Premium',
+                                description: 'Shows information about Member Depot Utility Premium',
                         },
                 });
         }
@@ -32,7 +32,7 @@ class PremiumCommand extends Command {
                 container.setAccentColor(0xffffff);
 
                 container.addTextDisplayComponents(
-                        new TextDisplayBuilder().setContent('**Falcron Premium**'),
+                        new TextDisplayBuilder().setContent('**Member Depot Utility Premium**'),
                 );
 
                 container.addSeparatorComponents(
@@ -41,7 +41,7 @@ class PremiumCommand extends Command {
 
                 container.addTextDisplayComponents(
                         new TextDisplayBuilder().setContent(
-                                'Falcron Premium is now available to purchase, you can purchase Falcron Premium by joining the official support server',
+                                'Member Depot Utility Premium is now available to purchase, you can purchase Member Depot Utility Premium by joining the official support server',
                         ),
                 );
 
@@ -53,7 +53,7 @@ class PremiumCommand extends Command {
                         new ActionRowBuilder().addComponents(
                                 new ButtonBuilder()
                                         .setLabel('Get Premium')
-                                        .setURL('https://discord.gg/AeroX')
+                                        .setURL('https://discord.gg/Member Depot')
                                         .setStyle(ButtonStyle.Link),
                         ),
                 );
@@ -68,11 +68,11 @@ class PremiumCommand extends Command {
 export default new PremiumCommand();
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

@@ -1,5 +1,5 @@
-// Falcron | AeroX Development
-// Author: itsfizys
+// Member Depot Utility | Member Depot
+// Author: Stichachu13
 const _emitWarning = process.emitWarning.bind(process);
 process.emitWarning = (warning, ...args) => {
     if (typeof warning === 'string' && warning.includes('ready event has been renamed to clientReady')) return;
@@ -21,7 +21,7 @@ const banner = [
         c(192,132,252)(`  ██║  ██║███████╗██║  ██║╚██████╔╝██╔╝ ██╗`),
         c(216,118,249)(`  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝`),
         ``,
-        `  ${dim('Developer')}  ${bold(c(192,132,252)('itsfizys'))}     ${dim('Organization')}  ${bold(c(99,179,237)('AeroX Development'))}`,
+        `  ${dim('Developer')}  ${bold(c(192,132,252)('Stichachu13'))}     ${dim('Organization')}  ${bold(c(99,179,237)('Member Depot'))}`,
         ``,
 ].join('\n');
 
@@ -70,11 +70,11 @@ main();
 export { client };
 
 /**
- * Project: Falcron
- * Author: itsfizys (Aegis)
- * Organization: AeroX Development
- * GitHub: https://github.com/AeroXDevs
+ * Project: Member Depot Utility
+ * Author: Stichachu13
+ * Organization: Member Depot
+ * GitHub: https://github.com/Member-Depot
  * License: Custom
  *
- * © 2026 AeroX Development. All rights reserved.
+ * © 2026 Member Depot. All rights reserved.
  */

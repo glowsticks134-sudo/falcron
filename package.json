@@ -1,7 +1,7 @@
 {
-  "name": "falcron",
+  "name": "member-depot-utility",
   "version": "1.0.0",
-  "description": "A feature-rich, modular Discord bot built with Discord.js — developed by itsfizys under AeroX Development.",
+  "description": "A feature-rich, modular Discord bot built with Discord.js — developed by Stichachu13 under Member Depot.",
   "type": "module",
   "scripts": {
     "start": "node src/bot.js",
@@ -33,17 +33,17 @@
     "discord",
     "bot",
     "discord.js",
-    "falcron",
+    "member-depot-utility",
     "aerox",
     "modular",
     "invite-tracker",
     "giveaway"
   ],
-  "author": "itsfizys (https://github.com/AeroXDevs)",
+  "author": "Stichachu13 (https://github.com/Member-Depot)",
   "license": "SEE LICENSE IN LICENSE",
-  "homepage": "https://github.com/AeroXDevs",
+  "homepage": "https://github.com/Member-Depot",
   "bugs": {
-    "url": "https://discord.gg/AeroX"
+    "url": "https://discord.gg/Member Depot"
   },
   "engines": {
     "node": ">=18.0.0"
