@@ -46,9 +46,10 @@
     "url": "https://discord.gg/Member Depot"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
+    "@discordjs/rest": "^2.6.1",
     "discord.js": "^14.25.1",
     "dokdo": "^1.0.1",
     "fs-extra": "^11.3.3",

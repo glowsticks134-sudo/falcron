@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install"
+
+[deploy]
+startCommand = "node src/bot.js"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[nixpacks]
+nodeVersion = "20"
