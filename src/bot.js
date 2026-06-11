@@ -9,6 +9,15 @@ process.emitWarning = (warning, ...args) => {
 import { Bot } from '#classes/client';
 import { logger } from '#utils';
 
+const REQUIRED_ENV = ['DISCORD_TOKEN', 'DISCORD_CLIENT_ID', 'MONGODB_URI'];
+const missing = REQUIRED_ENV.filter((k) => !process.env[k]);
+if (missing.length > 0) {
+    console.error('\x1b[31m\x1b[1m[Startup] Missing required environment variables:\x1b[0m');
+    missing.forEach((k) => console.error(`  \x1b[31m✗ ${k}\x1b[0m`));
+    console.error('\x1b[33mSet these in your Railway service → Variables tab, then redeploy.\x1b[0m');
+    process.exit(1);
+}
+
 const c = (r, g, b) => (t) => `\x1b[38;2;${r};${g};${b}m${t}\x1b[0m`;
 const bold = (t) => `\x1b[1m${t}\x1b[0m`;
 const dim  = (t) => `\x1b[2m${t}\x1b[0m`;
