@@ -1,3 +1,11 @@
 node_modules/
 .env
 package-lock.json
+
+# Replit-specific files
+.replit
+replit.nix
+.local/
+.agents/
+.cache/
+attached_assets/
